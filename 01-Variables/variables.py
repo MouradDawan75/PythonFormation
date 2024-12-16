@@ -73,3 +73,10 @@ n = 00.99
 
 nb = 123_456_789
 print(nb)
+
+print(">>>>>>>>>>>>>>>Nombres aléatoire:")
+
+import random
+
+a = random.randint(1,10)
+print(a)
