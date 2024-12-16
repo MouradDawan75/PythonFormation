@@ -55,7 +55,7 @@ print(">>>>>>>>>>>>> Opérateurs de comparaison:")
 
 print(">>>>>>>>>>>>> Opérateurs logiques:")
 
-# and (et logique) or (ou logique) ! (non logique)
+# and (et logique) or (ou logique) not (non logique)
 
 # A     B    A and B    A or B
 # v     f       f          v

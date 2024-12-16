@@ -1,0 +1,21 @@
+1) Affichez tous les nombres de 1 à 15 inclus -> range
+2) Affichez tous les nombres pairs de 1 à 10 inclus -> range
+3) Affichez un menu:
+
+  choix =  input = '''
+
+     Choisir une opération:
+
+    - Addition: tapez a
+    - Soustraction: tapez s
+    - Multiplication: tapez m
+    - Division: tapez d
+    - Quitter: tapez q
+    '''
+
+- Tant que choix != 'q' le menu s'Affiche
+- Tant que choix saisi n'est valide, l'utilisateur doit saisir un autre
+- Si opération égale division, vérifiez que le second nombre est différent de 0
+    sinon demandez la saisie du second nombre
+- Demandez la saisie de 2 nombres réels
+- Affichez le résultat -> utilisez fstring
