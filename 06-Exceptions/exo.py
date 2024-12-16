@@ -34,7 +34,7 @@ while nb_tentative < TENTATIVE_MAX:
     try:
         nb = int(nb)
         if nb == aleatoire:
-            print(f'Trouvé en {nb_tentative} tentatives. Alétoire = {aleatoire}')
+            print(f'Trouvé en {nb_tentative} tentatives. Aléatoire = {aleatoire}')
             break
 
         if nb_tentative == TENTATIVE_MAX:
