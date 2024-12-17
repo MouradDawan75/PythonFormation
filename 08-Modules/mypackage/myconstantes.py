@@ -1,0 +1,4 @@
+SERVER="192.168.0.15"
+PORT=8080
+USER="Admin"
+PASSWORD="@@sdqsd!!"
