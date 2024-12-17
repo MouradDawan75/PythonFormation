@@ -1,0 +1,13 @@
+Pour installer un package sur la machine 
+locale:
+1- Créer un fichier setup.py en dehors du 
+package
+2- Importer la fonction setup du module 
+setuptools (dans le fichier setup)
+3- Mettre en place en conf. dans la fct 
+setup()
+4- Ouvrir le CMD sur le fichier
+setup.py  et exécutez la commande
+suivante:
+
+pip install .

@@ -1,0 +1,23 @@
+1) 
+nombres = range(-10, 10)
+Construire une liste ne contenant que les nombres positifs
+
+2)
+
+nombres = range(10)
+construire une nouvelle liste en inversant les nombres impairs: 0,-1,2,-3,4......
+
+3) 
+lst = [3,6,5,2,9]
+Affichez le nombre d'éléments supérieurs à 3
+
+4)
+listA = [1,2,3,4]
+listB = [1,2]
+
+nouvelle liste qui est la différence entre ces 2 liste
+
+5)
+Définir une fct qui prend en param une liste d'entiers et qui renvoie la somme
+des entiers pairs  distincts.
+lst = [2,3,2,4,5,4,6] -> somme = 12

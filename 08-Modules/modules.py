@@ -49,10 +49,14 @@ from mypackage.myfunctions import fonction1
 # __name__ == '__main__' pour un module exécuté
 # __name__ == 'nom_module' pour un module importé
 
-#print(__name__)
+# print(__name__)
 
 # Import des éléments du module
 from mypackage.myconstantes import SERVER,PORT,USER,PASSWORD
 
 # Import du module
 from mypackage import myconstantes
+
+# Lors d'un import le __init__.py est exécuté en premier
+
+
