@@ -42,6 +42,7 @@ print(">>>>>>>>>>>>>> Parcourir une liste:")
 
 notes = [2,6,7,9]
 
+
 print('>>> For:')
 
 for n in notes:
@@ -116,3 +117,37 @@ nombres = range(10)
 nombres_pairs = [e for e in nombres if e % 2 == 0]
 
 print(nombres_pairs)
+
+print(">>>>>>>>>>>>> Multiples conditions:")
+
+nombres = range(10)
+
+# nouvelle liste e contenant que les nombres pairs supérieurs à 2
+
+# 2 syntaxes:
+
+# Utilisation des opérateurs logiques: and
+
+lst1 = [e for e in nombres if e % 2 == 0 and e > 2]
+
+# Utiisation de plusieurs if:
+
+lst2 = [e for e in nombres if e % 2 == 0 if e > 2]
+
+print(">>>>>> random pour les listes:")
+
+from random import choice, sample, shuffle
+
+cartes = [x for x in range(1,11)]
+
+print(">>>> choice: un élément aléatoire à partir d'une liste")
+print(choice(cartes))
+
+print(">>>sample: ensemble d'éléments aléatoires:")
+
+print(sample(cartes, k=5))
+
+print(">>>>>shuffle: mélanger les éléments d'une liste")
+
+shuffle(cartes)
+print(cartes)
