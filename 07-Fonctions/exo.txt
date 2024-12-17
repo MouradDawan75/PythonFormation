@@ -18,7 +18,7 @@ def moyenne_liste(entiers: list[int]) -> float:
 # .
 # 11 x 12 = 132
 
-#4) Affichez une menu:
+#4) Affichez un menu:
 
 choix = input('''
 1 - Convertir heures en minutes

@@ -44,3 +44,5 @@ plusieurs lignes
 """
 
 print(texte)
+
+print("Prénom:",prenom,"Age:",age, sep="/")
