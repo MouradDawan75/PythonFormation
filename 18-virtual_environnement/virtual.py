@@ -27,3 +27,37 @@
 # Pour installer les modules listés dans requirements.txt:
 # commande dans le terminal: pip install -r requirements.txt
  
+
+import os
+import json
+
+# Pour les fichiers JSON: 2 fcts load - dump
+
+print(">>>>>>>>>>>>>>> Gestion des fichiers JSON avec: load() et dump()")
+
+chemin_dossier = os.path.dirname(__file__)
+chemin_json = os.path.join(chemin_dossier, 'videos.json')
+
+with open(chemin_json, 'r', encoding='utf-8') as flux:
+    contenu = json.load(flux)
+
+print(type(contenu))
+
+chaine = json.dumps(contenu)
+
+print(chaine.count('Video'))
+print(chaine.count('type'))
+
+
+# lst = []
+# for dictionnaire in contenu.get('items'):
+#     d = dictionnaire.get('payload')
+
+#     for cle in d.keys():
+#         if cle == 'type':
+#             lst.append(contenu.get(cle))
+
+# print(len(lst))
+
+
+    
