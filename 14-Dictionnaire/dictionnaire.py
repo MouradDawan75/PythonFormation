@@ -65,3 +65,30 @@ d = {}
 
 for lettre in mot:
     d[lettre] = mot.count(lettre)
+
+print('___________Parcourir un dict:')
+
+d = {
+    'a': 1,
+    'b': 2
+}
+
+# Le for par défaut ne renvoie que les clés
+
+for element in d:
+    print(f'Clé: {element} - Valeur: {d.get(element)}')
+
+# For sur les clés via a fct keys():
+for cle in d.keys():
+    print(cle)
+
+# For sur les valeurs via la fct values()
+for value in d.values():
+    print(value)
+
+for item in d.items():
+    print(item) # item est tuple contenant (clé,valeur)
+
+# item est un tuple, on peut extraire ses éléments
+for k,v in d.items():
+    print(k,v)

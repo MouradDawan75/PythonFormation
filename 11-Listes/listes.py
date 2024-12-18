@@ -7,6 +7,7 @@ l2 = list()
 
 notes = [2,6,7,9]
 
+
 # Ajouts
 
 notes.append(9)
