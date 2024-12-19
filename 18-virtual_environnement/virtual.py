@@ -49,15 +49,24 @@ print(chaine.count('Video'))
 print(chaine.count('type'))
 
 
-# lst = []
-# for dictionnaire in contenu.get('items'):
-#     d = dictionnaire.get('payload')
+dict_result = {}
 
-#     for cle in d.keys():
-#         if cle == 'type':
-#             lst.append(contenu.get(cle))
+for dictionnaire in contenu.get('items'):
+    d = dictionnaire.get('payload')
+    print('_____',d.get('type'))
 
-# print(len(lst))
+    for item in dictionnaire.get('items'):
+        print('================', item.get('payload').get('type'))
+        cle = item.get('payload').get('type')
+        if cle not in dict_result:
+            dict_result[cle] = 0
+        else:
+            dict_result[cle] += 1
+      
+
+print("========== Résultat final ============")
+
+print(dict_result)
 
 
     
