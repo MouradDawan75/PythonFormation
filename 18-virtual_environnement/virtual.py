@@ -45,23 +45,23 @@ print(type(contenu))
 
 chaine = json.dumps(contenu)
 
-print(chaine.count('Video'))
-print(chaine.count('type'))
 
 
 dict_result = {}
 
 for dictionnaire in contenu.get('items'):
-    d = dictionnaire.get('payload')
-    print('_____',d.get('type'))
+    #d = dictionnaire.get('payload')
+    #print('_____',d.get('type'))
 
     for item in dictionnaire.get('items'):
         print('================', item.get('payload').get('type'))
         cle = item.get('payload').get('type')
+        print(len(item.get('items')))
+
         if cle not in dict_result:
-            dict_result[cle] = 0
+            dict_result[cle] = len(item.get('items'))
         else:
-            dict_result[cle] += 1
+            dict_result[cle] += len(item.get('items'))
       
 
 print("========== Résultat final ============")
