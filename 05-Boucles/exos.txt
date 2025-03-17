@@ -1,0 +1,19 @@
+1) Affichez tous les nombres de 1 (inclus) à 10 (inclus) -> range
+2) Affichez tous les nombres pairs de 1 (inclus) à 10 (inclus) -> range
+3) Affichez un menu:
+
+choix = input('''
+    Choisir une opération
+
+    - Addition: tapez a 
+    - Soustraction: tapez s
+    - multiplication: tapez m 
+    - Division: tapez d 
+    - Quitter: tapez q 
+
+''')
+
+Tant que le choix saisi est invalide: il doit saisir un autre
+Tant que le choix est différent de q, le menu s'affiche.
+Demandez la saisie de 2 nombres (int, float)
+Affichez le résultat
