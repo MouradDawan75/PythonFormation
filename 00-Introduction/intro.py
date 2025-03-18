@@ -11,7 +11,8 @@ print(nom)
 # Connaitre les types de données
 # Savoir faire des contrôles: conditions -> match/case : Python >= 3.10
 # Savoir gérer les traitements répététifs: boucles
-# Savoir gérer les erreurs
+# Savoir gérer les erreurs: try/except
+# Savoir définir des modules de fonctions et savoir les réutiliser dans les autres modules
 # Savoir manipuler les collections 
 
 import os, subprocess
