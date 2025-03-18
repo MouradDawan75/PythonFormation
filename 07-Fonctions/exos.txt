@@ -1,10 +1,10 @@
 1) fonction qui renvoie la somme d'une liste d'entiers. [10,5,25] -> 40
 2) fonction qui renvoie la moyenne d'une liste d'entiers. [10,5,25] -> 40
-3) fonction qui affiche a table de multiplication d'un nombre où e premier et le dernier sont des paramètres
+3) fonction qui affiche la table de multiplication d'un nombre où le premier et le dernier multiples sont des paramètres
 
-def table_multplication(nombre, premier_multiple, dernier_multiple):
+def table_mulitplication(nombre, premier_multiple, dernier_multiple):
 
-table_multplication(11,1,12) -> affiche
+table_multiplication(11,1,12) -> affiche
 11 x 1 = 1
 11 x 2 = 22
 .
@@ -21,6 +21,6 @@ choix = input('''
 
 ''')
 
-si choix == '1' -> demadez la saisie du nombre d'heures à Convertir -> affichez le résutat. Ex: saisie 3: résultat: 3h = 180m
-si choix == '2' -> demadez la saisie du nombre de minutes à Convertir -> affichez le résutat. Ex: saisie 180: résultat: 90m = 1h 30m
+si choix == '1' -> demandez la saisie du nombre d'heures à Convertir -> affichez le résutat. Ex: saisie 3: résultat: 3h = 180m
+si choix == '2' -> demandez la saisie du nombre de minutes à Convertir -> affichez le résutat. Ex: saisie 180: résultat: 90m = 1h 30m
 Tant que le choix est différent de 3 le menu s'affiche.
