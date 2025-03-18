@@ -76,3 +76,5 @@ while True:
 
     if choix == '2':
         choix2()
+
+

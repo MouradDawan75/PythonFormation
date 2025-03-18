@@ -49,3 +49,5 @@ print("ceci \"est\" une chaine")
 
 chemin = "c:\\test\\notes.txt"
 print(chemin)
+
+print("Prénom:",prenom,"Age:",age, sep="/")
