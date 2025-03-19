@@ -52,7 +52,7 @@ utilisateur['contrat'] = 'CDI' # si clé existante: elle sera écrasée
 
 print(utilisateur)
 
-print(">>>>>>>>>>>>>>>>> Parcouri un dictionnaire:")
+print(">>>>>>>>>>>>>>>>> Parcourir un dictionnaire:")
 
 d = {
     "a" : 1,
@@ -90,9 +90,9 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Appelle d'une API Rest:")
 
 # WebService REST ou  API REST: est une application sans IHM (interface homme/machine) - c'est un style d'architecture
 
-# Api REST: Representation State Transfert: n'est  pas limité au format: elle peut renvoyé du texte, du xml et du binaire
+# Api REST: Representation State Transfert: n'est  pas limitée au format JSON: elle peut renvoyée du texte, du xml et du binaire (fichiers)
 # Il s'agit d'un ensemble de ressources (images, article d'un journal....) 
-# où chaque possède un ID (URI: Uniform Resource Identifier - appelé aussi endpoint), une méthode d'accès (GET, DELETE, POST, PUT) et elle
+# où chaque ressource possède un ID (URI: Uniform Resource Identifier - appelé aussi endpoint), une méthode d'accès (GET, DELETE, POST, PUT) et elle
 # peut être publique ou privée
 
 # Toutes ces infos sont fournies dans la documentation de l'API
@@ -126,3 +126,60 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Appelle d'une API Rest:")
 #         for code in pays.get('borders'):
 #             details = requests.get(f'https://restcountries.com/v3.1/alpha/{code}').json()
 #             print(f"Nom: {details[0].get('name').get('common')}")
+
+print(">>>>> Dictionary Comprehension:")
+
+d = {
+    "a" : 1,
+    "b" : 2
+}
+
+# Inverser le dict d:
+# Syntaxe classique:
+
+resultat = dict()
+
+for k,v in d.items():
+    resultat[v] = k
+
+
+print(resultat)
+
+# Syntaxe Dictionay Comprehension:
+
+result = {v:k for k,v in d.items()}
+print(result)
+
+dict1 = {'a':1, 'b':2, 'c':3, 'd': 4, 'c': 5}
+
+# nouveau dict en doublant les valeurs de dict1
+
+dict2 = {k:v*2 for k,v in dict1.items()}
+
+print(dict2)
+
+# A partir de dict1, construire un nouveau dict ne contenant que les valeurs paires supérieures à 2
+
+dict3 = {k:v for k,v in dict1.items() if v % 2 == 0 if v > 2}
+
+print(dict3)
+
+print(">>>>>>>>>>>>>>>>>>>> Complément chapitre Fonctions:")
+
+def func(*args, **kvagrs):
+    #print(type(args)) # tuple -> pour les paramètres anonymes
+    #print(type(kvagrs)) # dict -> pour les paramètres nommées
+    print(args)
+    print(kvagrs)
+    
+    
+    
+func(1,2)
+func(x=10,y=20)
+
+def generate_dict(**params):
+    return params
+
+
+print(generate_dict(nom='DUPONT',prenom='Jean',age=60))
+print(generate_dict(axe_x=['nom','prénom'], axe_y=['DUPONT','Jean']))

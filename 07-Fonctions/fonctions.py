@@ -107,6 +107,7 @@ print(somme_variable(10,20))
 print(somme_variable(10,20,30))
 print(somme_variable(10,20,30,40))
 
+
 print('>>>>>>>>>>> Fonction plusieurs résultats:')
 
 def somme_produit(x:int, y:int) :

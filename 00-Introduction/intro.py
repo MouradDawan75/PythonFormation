@@ -20,3 +20,7 @@ import os, subprocess
 p = subprocess.run(['ipconfig'], capture_output=True, text=True)
 print(p.stdout)
 
+
+
+
+
