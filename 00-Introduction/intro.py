@@ -20,6 +20,18 @@ import os, subprocess
 p = subprocess.run(['ipconfig'], capture_output=True, text=True)
 print(p.stdout)
 
+obj = subprocess.Popen(['powershell', "write-host 'test'"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+sortie, erreur = obj.communicate()
+
+print(sortie)
+print(erreur)
+
+def execute_shell(cmd):
+    obj = subprocess.Popen(['powershell', cmd], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    resultat = obj.communicate()
+    return resultat
+
+
 
 
 
