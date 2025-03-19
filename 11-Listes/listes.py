@@ -13,6 +13,7 @@ demo = [10,True,11.5,'test', [10,False]]
 
 notes = [2,6,7,9]
 
+
 # Ajouts:
 
 notes.append(6)
@@ -118,23 +119,66 @@ list4 = prenoms[::2] # du début jusqu'à la fin avec un pas de 2
 print(list4)
 
 # Affichez les 3 premiers éléments de la liste
-print('>>>>> 3 premiers')
+print('>>>>> Affichage des 3 premiers éléments')
 
 print(prenoms[0:3])
 
 # Affichez les 3 derniers éléments de la liste
-print('>>>>> 3 derniers')
+print('>>>>>Affichage des 3 derniers éléments')
 print(prenoms[-3:])
 
 # Supprimer les 3 premiers éléments de la liste
 
-print('>>>>>suppression des 3 premiers')
+print('>>>>>suppression des 3 premiers éléments')
 print(prenoms[3:])
 
 print(prenoms) # liste de départ non modifier suite à la suppression
 
 
-print('>>>>>suppression des 3 premiers et remplacement de la liste de départ')
+print('>>>>>suppression des 3 premiers éléments et remplacement de la liste de départ')
 prenoms = prenoms[3:] #écraser la liste de départ
 
 print(prenoms)
+
+print(">>>> Comprehension List:")
+
+# Liste en Comprehension: mécanisme permettant de nouvelles listes à partir de listes existantes en modifiant le contenu des 
+# listes de départ
+
+nombres = range(10)
+
+# Syntaxe classique:
+
+nombres_doubles = []
+
+for e in nombres:
+    nombres_doubles.append(e * 2)
+
+
+# Syntaxe Liste en compréhension:
+
+nombres_doubles_new = [e * 2 for e in nombres]
+
+nombres = range(10) # [0,..........,9]
+
+# Construire une nouvelles liste ne contenant que les nombres pairs
+
+nombres_pairs = [e for e in nombres if e % 2 == 0]
+
+# On peut aussi utiliser des fonctions
+
+def puissance(x):
+    return x ** 2
+
+nombres = range(10)
+
+nombres_puissance_deux = [puissance(e) for e in nombres]
+
+print(nombres_puissance_deux)
+
+# Syntaxe classique
+
+new_list = []
+
+for e in nombres:
+    new_list.append(e ** 2)

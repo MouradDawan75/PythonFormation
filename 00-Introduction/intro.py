@@ -10,10 +10,10 @@ print(nom)
 # Connaitre la syntaxe: fstring -> Python >= 3.6 f"{variable}"
 # Connaitre les types de données
 # Savoir faire des contrôles: conditions -> match/case : Python >= 3.10
-# Savoir gérer les traitements répététifs: boucles
+# Savoir gérer les traitements répététifs: boucles for et while
 # Savoir gérer les erreurs: try/except
 # Savoir définir des modules de fonctions et savoir les réutiliser dans les autres modules
-# Savoir manipuler les collections 
+# Savoir manipuler les collections: list,tuple,set,dict
 
 import os, subprocess
 
