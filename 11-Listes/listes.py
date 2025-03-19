@@ -182,3 +182,37 @@ new_list = []
 
 for e in nombres:
     new_list.append(e ** 2)
+
+
+print(">>>>>>>>>>>>>>>>>>>> Multiples conditions:")
+
+nombres = range(10)
+# Nouvelle liste ne contenant que es nombres pairs supérieurs 4
+
+# 2 syntaxes:
+
+# Option1: utiliser les opérateurs logiques: aucune limite sur le nombre de and
+
+new_liste_syntaxe1 = [e for e in nombres if e % 2 == 0 and e > 4 ]
+
+# Options2: utiliser que des if: auncune limite sur le nombre de if
+
+new_liste_syntaxe2 = [e for e in nombres if e % 2 == 0 if e > 4 ]
+
+print(new_liste_syntaxe1)
+print(new_liste_syntaxe2)
+
+# Syntaxe classique:
+
+nombres = range(10)
+# Nouvelle liste ne contenant que es nombres pairs supérieurs 4
+
+result = []
+for e in nombres:
+    if e % 2 == 0 and e > 4:
+        result.append(e)
+
+
+print(result)
+
+result2 = [element for element in nombres if element % 2 == 0 and element > 4]
