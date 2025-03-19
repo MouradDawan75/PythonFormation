@@ -104,25 +104,25 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Appelle d'une API Rest:")
 # pip uninstall nom_module
 # pip list
 
-# pypi est le réferentiels des modules Python
+# pypi est le réferentiel en ligne des modules Python
 
-import requests
+# import requests
 
-URI = 'https://restcountries.com/v3.1/all'
+# URI = 'https://restcountries.com/v3.1/all'
 
-#json(): permet de formatter le contenu en json
+# #json(): permet de formatter le contenu en json
 
-reponse = requests.get(URI).json()
+# reponse = requests.get(URI).json()
 
-#print(reponse) c'est une liste de dictionniares
+# #print(reponse) c'est une liste de dictionniares
 
-country = input('Votre pays: ')
+# country = input('Votre pays: ')
 
-for pays in reponse:
-    if pays.get('name').get('common') == country:
-        print(f"Nom: {pays.get('name').get('common')} - Capitale: {pays.get('capital')} - Population: {pays.get('population')}")
-        print('Pays limitrophes:')
-        print(pays.get('borders'))
-        for code in pays.get('borders'):
-            details = requests.get(f'https://restcountries.com/v3.1/alpha/{code}').json()
-            print(f"Nom: {details[0].get('name').get('common')}")
+# for pays in reponse:
+#     if pays.get('name').get('common') == country:
+#         print(f"Nom: {pays.get('name').get('common')} - Capitale: {pays.get('capital')} - Population: {pays.get('population')}")
+#         print('Pays limitrophes:')
+#         print(pays.get('borders'))
+#         for code in pays.get('borders'):
+#             details = requests.get(f'https://restcountries.com/v3.1/alpha/{code}').json()
+#             print(f"Nom: {details[0].get('name').get('common')}")
